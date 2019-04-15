@@ -27,7 +27,7 @@ function buysomething() {
   inquirer
     .prompt({
       name: "items",
-      message: "would you like to purchase any [ITEMS]?",
+      message: "would you like to purchase any ITEMS?(yes or no)",
       choices: ["ITEMS"]
     })
     .then(function(answer) {
@@ -44,7 +44,7 @@ function purchase() {
       {
         name: "item",
         type: "input",
-        message: "What is the item you would like to purchase?"
+        message: "What is the item number you would like to purchase?"
       },
       {
         name: "units",
